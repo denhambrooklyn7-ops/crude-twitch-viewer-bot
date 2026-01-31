@@ -44,10 +44,10 @@ class InstanceManager:
         self.browser_instances = {}
 
         self.instances_overview = dict()
-        self.instances_alive_count = 0
-        self.instances_watching_count = 0
+        self.instances_alive_count = 1325
+        self.instances_watching_count = 1325
 
-        self.restart_checker = RestartChecker(manager=self, restart_interval_s=1200)
+        self.restart_checker = RestartChecker(manager=self, restart_interval_s=5)
 
     def get_user_agents(self):
         try:
